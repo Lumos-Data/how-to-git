@@ -1,6 +1,6 @@
 # A Friendly Guide to Git and GitHub
 
-Welcome! If you're looking for a simple, clear explanation of **Git** and **GitHub**—whether you're a seasoned coder, a project manager, or just someone interested in how we manage our files—you're in the right place.
+Welcome! If you're looking for a simple, clear explanation of **Git** and **GitHub**.
 
 This guide is designed for **our members** and anyone interested in understanding the essential tools of modern project collaboration.
 
@@ -10,7 +10,7 @@ This guide is designed for **our members** and anyone interested in understandin
 
 People often use these two terms interchangeably, but they are actually two different things that work perfectly together.
 
-### What is Git? (The Time Machine)
+### What is Git?
 
 **Git** is a system that lives on your computer. Its entire purpose is **Version Control**.
 
@@ -19,11 +19,11 @@ Imagine you’re working on a document and constantly hitting "Save As Version 1
 * **A Perfect History:** Git tracks **every change** made to every file in your project. This means you can instantly go back to any previous version, making mistakes easy to fix and major crashes a non-issue.
 * **Proof of Work:** It records exactly *who* made *what* change and *when*. This is the core of how teams keep track of their work.
 
-### What is GitHub? (The Online Hub)
+### What is GitHub?
 
-**GitHub** is a website (a cloud service) that acts as the central meeting place for all projects managed by Git. Think of it as **our club’s central digital archive.**
+**GitHub** is a website that acts as the central meeting place for all projects managed by Git. Think of it as **our club’s central digital archive.**
 
-* **Project Hosting:** It's where we store the main, official copy of our project files (called a **Repository** or **Repo**).
+* **Project Hosting:** It's where we store the main, official copy of our project files e.g. our website (called a **Repository** or **Repo**).
 * **Collaboration Tools:** GitHub provides the features we use to work together, like asking for feedback on changes and holding discussions before changes go live.
 * **Networking:** It’s a huge platform for showing off your work and connecting with others who are building cool things.
 
@@ -56,7 +56,7 @@ You don't need to learn a whole new language, just a few core concepts will help
 
 How you use Git and GitHub depends on your role.
 
-### Option A: Using the GitHub Website (Easy for Non-Tech Roles)
+### Option A: Using the GitHub Website
 
 If your work is mainly in documentation (like this `README.md`) or simple file updates, you can often do everything right in your web browser.
 
@@ -65,7 +65,7 @@ If your work is mainly in documentation (like this `README.md`) or simple file u
 3.  **Commit:** After making your changes, scroll to the bottom. Write a short, clear **Commit Message** (e.g., "Updated contact email in README") and click **Commit changes**.
     * *That's it!* Your change is immediately saved and part of the project's history.
 
-### Option B: Using the Git Command Line (Standard for Developers)
+### Option B: Using the Git Command Line
 
 For more in-depth work (like coding), developers use the command line on their computer.
 
@@ -75,13 +75,13 @@ For more in-depth work (like coding), developers use the command line on their c
     ```
 2.  **Start Your Work (Branch):** Create a new branch so your changes are isolated.
     ```bash
-    git switch -c my-new-feature
+    git checkout -b feat/my-new-feature
     ```
 3.  **Save Your Work (Commit):** Once you've made file edits, you take a "snapshot" and save it.
     ```bash
     git add . 
     # Stagging all changes for the commit
-    git commit -m "My descriptive commit message"
+    git commit -m "feat: my descriptive commit message"
     ```
 4.  **Share Your Work (Push):** Upload your saved commits to GitHub.
     ```bash
